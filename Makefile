@@ -3,8 +3,10 @@ CFLAGS=-g -Werror -Wall
 # CPPFLAGS=<path_to_your_include>
 # LDFLAGS=<path_to_your_lib>
 
-all: ex1 ex2 ex3 ex4 ex5 ex6
+all: ex1 ex2 ex3 ex4 ex5 ex6 ex7
 
+ex7: ex7.c
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -o ex7 ex7.c -luv
 ex6: ex6.c
 	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -o ex6 ex6.c -luv
 ex5: ex5.c
